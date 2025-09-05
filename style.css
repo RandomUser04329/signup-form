@@ -71,6 +71,18 @@ body {
     background-color: rgb(50, 56, 73);
     color: white;
     width: auto;
+    height: 500px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.signup-info {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
