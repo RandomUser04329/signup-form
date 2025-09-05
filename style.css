@@ -1,4 +1,4 @@
-*{
+ * {
     border: 1px solid red;
 }
 
@@ -75,20 +75,32 @@ body {
     gap: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
 }
 
 .signup-info {
-    padding: 10px;
+    gap: 5px;
+    padding: 0px;
+    height: 150px;
+    width: 430px;
+    margin-bottom: 10px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    flex-shrink: 0;
 
+}
+
+.signup-info label { 
+    font-family: sans-serif;
 }
 
 #createanacc-header {
     font-size: 20px;
     font-family: sans-serif;
-    margin-left: 5px;
+    margin-left: 10px;
+    align-self: flex-start;
 }
 
