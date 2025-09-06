@@ -2,6 +2,18 @@
     border: 1px solid red;
 }
 
+@font-face {
+    font-family: title-font;
+    src: url("../signup-form/fonts/Kenyan\ Coffee\ Rg.otf");
+}
+
+
+
+
+
+
+
+/*SETUP*/
 body {
     border: 0;
     margin: 0;
@@ -11,6 +23,23 @@ body {
     display: flex;
 }
 
+.main-screen {
+    height: 100vh;
+    width: 100vh;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/*SIDE DIV*/
 .sidebar {
     height: 100vh;
     width: 100vh;
@@ -21,24 +50,14 @@ body {
     flex-shrink: 1;
     flex-direction: column;
     justify-content: space-between;
-    
-}
-
-.main-screen {
-    height: 100vh;
-    width: 100vh;
-    background-color: rgb(50, 50, 50);
-    display: flex;
-    flex-shrink: 1;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .logobar {
     margin-top: 200px;
     padding: 20px;
-    font-size: 26px;
+    font-size: 42px;
     font-style: bold;
+    font-family: title-font;
     color: white;
     background-color: rgb(0, 0, 0, 0.6);
     display: flex;
@@ -53,12 +72,13 @@ body {
 }
 
 .pitch-box {
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(36, 36, 36);
     color: white;
     width: auto;
+    height: 200px;
     display: flex;
     justify-content: center;
-    flex-shrink: 1;
+    flex-shrink: 0;
 }
 
 #signup-pitch {
@@ -67,34 +87,23 @@ body {
     font-size: 16px;
 }
 
+
+
+
+
+
+
+
+
+
+/*MIDDLE DIV*/
 .signup-box { 
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(51, 51, 51);
     color: white;
     width: auto;
-    height: 500px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     height: 250px;
-}
-
-.signup-info {
-    gap: 5px;
-    padding: 10px;
-    height: 150px;
-    width: 430px;
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-
-}
-
-.signup-info label { 
-    font-family: monospace;
 }
 
 #createanacc-header {
@@ -104,21 +113,33 @@ body {
     align-self: flex-start;
 }
 
-.confirm-login {
-    background-color:rgb(88, 88, 88);
-    height: 100px;
+#signup-info {
+    gap: 5px;
+    height: 150px;
+    width: 300px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
     flex-shrink: 0;
+}
+
+#signup-info label, input { 
+    font-family: monospace;
+    width: 120px;
+    height: 15px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 #confirm-btn {
     font-family: monospace;
-    color: white;
-    background-color:rgb(119, 119, 119);
-    margin-top: 10px;
-    margin-left: 10px;
+    color: black;
+    background-color:rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-bottom: 30px;
     width: 125px;
     height: 40px;
     border: 0;
@@ -126,17 +147,56 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
 
+#confirm-btn:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+#confirm-btn:active {
+    background-color: rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
+
+/*ADD STYLES TO THE PASSWORD + CONFIRM PASSWORD AND THATS IT!*/
+
+
+
+
+
+
+
+/* BOTTOM DIV*/
+.confirm-login {
+    background-color:rgb(27, 27, 27);
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 #signIn {
-    margin-left: 10px;;
+    margin-left: 15px;
     color: white;
     font-family: monospace;
 }
 
 #signin-link {
     color: lightblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#signin-link:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#signin-link:active {
+    color: rgb(100, 100, 100);
     text-decoration: none;
 }
 
