@@ -59,7 +59,7 @@ body {
     font-style: bold;
     font-family: title-font;
     color: white;
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,20 +71,32 @@ body {
     height: 100px;
 }
 
+
+
+
+
+
+
+
+/*FIRST BOX (PITCH BOX)*/
 .pitch-box {
     background-color: rgb(36, 36, 36);
     color: white;
-    width: auto;
-    height: 200px;
+    border-top: 2px solid rgb(70, 70, 70);
+    border-bottom: 2px solid rgb(70, 70, 70);
+    padding: 20px;
+    height: 150px;
     display: flex;
-    justify-content: center;
-    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-shrink: 1;
 }
 
 #signup-pitch {
-    margin: 20px;
+    margin: 0px;
+    width: 400px;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 15px;
+    flex-shrink: 0;
 }
 
 
@@ -118,6 +130,7 @@ body {
     height: 150px;
     width: 300px;
     margin-left: 10px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -126,7 +139,7 @@ body {
 
 #signup-info label, input { 
     font-family: monospace;
-    width: 120px;
+    width: 130px;
     height: 15px;
 }
 input::-webkit-outer-spin-button,
@@ -139,7 +152,8 @@ input::-webkit-inner-spin-button {
     color: black;
     background-color:rgb(255, 255, 255);
     margin-left: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
     width: 125px;
     height: 40px;
     border: 0;
@@ -159,8 +173,14 @@ input::-webkit-inner-spin-button {
     transform: translateY(2px);
 }
 
+input[id = "confirm-pw"]:invalid {
+    color: red;
+}
 
-/*ADD STYLES TO THE PASSWORD + CONFIRM PASSWORD AND THATS IT!*/
+
+
+
+
 
 
 
@@ -174,7 +194,6 @@ input::-webkit-inner-spin-button {
     height: 160px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-shrink: 0;
 }
 
